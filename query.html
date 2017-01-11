@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Lexical Inventory Query Demo</title>
+        <link type="text/css" rel="stylesheet" href="query.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="tei-lod.js"></script>
+        <script type="text/javascript" src="query.js"></script>
+        <meta name="Perseus-Sparql-Endpoint" content="http://services.perseus.tufts.edu/fuseki/ds/query"/>
+        
+    </head>
+    <body>
+        <div>
+            <form action="dummy">
+                <div>
+                    <label for="token">Latin Token:</label>
+                    <input xml:lang="lat" type="text" id="token" value=""/>
+                    <button id="lookup-form">Lookup</button>
+                </div>
+            </form>
+        </div>
+        <div id="results">
+          
+        </div>
+    </body>
+</html>
