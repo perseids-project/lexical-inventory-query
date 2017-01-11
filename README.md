@@ -18,5 +18,11 @@ Which itself is a request to an apache proxy to fuseki
     Header set Content-Type text/xml
 </Location>
 
+The results are Lexical Inventory URIs which are retrieved from the CITE Collections service
 
+e.g. http://data.perseus.org/collections/urn:cts:perseus:latlexent.lex34070
+
+Is implemented via and Apache mod_rewrite rule at data.perseus.org which requires r
+
+http://services2.perseids.org/collections/api?req=GetObject&urn=urn:cite:perseus:latlexent.lex34070
 
