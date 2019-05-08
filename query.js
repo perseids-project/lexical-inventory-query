@@ -20,7 +20,7 @@ function populate_lemmas (a_lemmas) {
     }
     for (var i=0; i<a_lemmas.length; i++) {
     
-        $.get("http://perseids.org/queries/morpheus/lat/"+a_lemmas[i]).done(
+        $.get("https://www.perseids.org/queries/morpheus/lat/"+a_lemmas[i]).done(
             function(a_data) {
                 var uri = $('uri',a_data).text();
                 $("#results").append('<iframe src="http://data.perseus.org/collections/' + uri + '"/>');
